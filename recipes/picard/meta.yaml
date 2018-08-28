@@ -1,15 +1,15 @@
-{% set version = "2.17.3" %}
+{% set version = "2.18.11" %}
 
 package:
   name: picard
   version: {{ version }}
 
 source:
-  fn: picard.jar
   url: https://github.com/broadinstitute/picard/releases/download/{{ version }}/picard.jar
-  sha256: 97aad11a339012044cbfbbc8874e1e800609e85892be1177ad46df28ad0515dc
+  sha256: 09adee14d1585951cf25bd32df79c8e18804324d1faeaaf8427674b9c6f7930f
 
 build:
+  noarch: generic
   number: 0
   skip: False
 
